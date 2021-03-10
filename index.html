@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 id="title">Banking survey</h1>
+            <p id="description">please complete this survey this is meant to help us improve our services</p>
+        </header>
+        <section>
+            <form action="#" id="survey-form">
+                <div class="input-item">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" id="name" placeholder="enter your name">
+                </div>
+                <div class="input-item">
+                    <label for="email" id="email-label">E-mail</label>
+                    <input type="email" id="email" placeholder="enter your e-mail">
+                </div>
+                <div class="input-item">
+                    <label for="number" id="number-label">Age</label>
+                    <input type="number" id="number" min="18" max="55" placeholder="25">
+                </div>
+                <div class="input-item">
+                    <label for="dropdown" id="gender-label">Gender</label>
+                    <select name="" id="dropdown" >
+                        <option value="choose" disabled selected>choose your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="input-item">
+                    <p class="input-label">How do you descripe the services presented by your bank?</p>
+                    <label>
+                        <input type="radio" name="user-evaluation"  class="input-radio">Extremely likely
+                    </label>
+                    <label>
+                        <input type="radio" name="user-evaluation" class="input-radio">Very likely
+                    </label>
+                    <label>
+                        <input type="radio" name="user-evaluation" class="input-radio">Somewhat likely
+                    </label>
+                    <label>
+                        <input type="radio" name="user-evaluation" class="input-radio">Not So likely
+                    </label>
+                    <label>
+                        <input type="radio" name="user-evaluation" class="input-radio">Not At All likely
+                    </label>
+                </div>
+                <div class="input-item">
+                    <p class="input-label">When considering a new bank, what would be the top two things you would generally consider? (Check one box or more that applay).</p>
+                    <label>
+                        <input type="checkbox" name="user-preference" value="price" class="input-checkbox">price
+                    </label>
+                    <label>
+                        <input type="checkbox" name="user-preference" value="brand" class="input-checkbox">brand
+                    </label>
+                    <label>
+                        <input type="checkbox" name="user-preference" value="innovation" class="input-checkbox">innovation
+                    </label>
+                    <label>
+                        <input type="checkbox" name="user-preference" value="quality" class="input-checkbox">quality
+                    </label>
+                    <label>
+                        <input type="checkbox" name="user-preference" value="value" class="input-checkbox">value
+                    </label>
+                </div>
+                <div class="input-item">
+                    <p class="input-label">In your own words, what are the things you like least about your current bank?</p>
+                    <textarea name="" class="input-textarea" placeholder="Write your openion here"></textarea>
+                </div>
+                <div class="input-item">
+                    <input type="submit" id="submit" value="submit" class="input-submit">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
